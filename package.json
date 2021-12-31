@@ -1,0 +1,27 @@
+{
+  "name": "prop-to-json",
+  "version": "0.0.1",
+  "description": "Convert plain properties key-value file to JSON.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "ptoj": "./bin/ptoj-global.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "property-to-json",
+    "ptoj",
+    "key",
+    "value",
+    "convert"
+  ],
+  "author": "sharmag",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "conf": "^10.1.1"
+  }
+}
