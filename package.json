@@ -1,13 +1,13 @@
 {
-  "name": "prop-to-json",
+  "name": "k2j",
   "version": "0.0.1",
-  "description": "Convert plain properties key-value file to JSON.",
+  "description": "Convert plain properties key=value file to JSON.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha"
   },
   "bin": {
-    "ptoj": "./bin/ptoj-global.js"
+    "k2j": "./bin/k2j-global.js"
   },
   "preferGlobal": true,
   "keywords": [
@@ -15,7 +15,8 @@
     "ptoj",
     "key",
     "value",
-    "convert"
+    "convert",
+    "k2j"
   ],
   "author": "sharmag",
   "license": "MIT",

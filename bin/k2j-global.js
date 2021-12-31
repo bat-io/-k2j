@@ -3,7 +3,7 @@
 const { Command } = require('commander');
 const program = new Command();
 const util = require('../lib/utils');
-var ptoj = require('../lib/index.js');
+var k2j = require('../lib/index.js');
 let validSchema;
 let outputFileName;
 let inputFileName;
@@ -21,17 +21,17 @@ const userInput = program.opts();
 inputFileName = userInput.input;
 outputFileName = userInput.output;
 
-const rawData = ptoj.readProp(inputFileName);
+const rawData = k2j.readProp(inputFileName);
 
 let jsonOutput;
 if (userInput.schema) {
     validSchema = util.getJSON(userInput.schema.replace(/'/g, '"'));
-    jsonOutput = ptoj.processWithSchema(rawData, validSchema);
+    jsonOutput = k2j.processWithSchema(rawData, validSchema);
 } else {
-    jsonOutput = ptoj.processRaw(rawData);
+    jsonOutput = k2j.processRaw(rawData);
 }
 if (outputFileName) {
-    ptoj.dumpOutputToFile(jsonOutput, outputFileName);
+    k2j.dumpOutputToFile(jsonOutput, outputFileName);
 } else {
-    ptoj.dumpOutputToStdout(jsonOutput);
+    k2j.dumpOutputToStdout(jsonOutput);
 }

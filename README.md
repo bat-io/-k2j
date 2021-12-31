@@ -1,13 +1,13 @@
-## ptoj: A global npm module for converting key=value property to JSON
+## k2j: A global npm module for converting key=value property to JSON
 
 Install module
 ```
-npm install -g ptoj
+npm install -g k2j
 ```
 
 Run
 ```
-ptoj -i .\test\data.properties
+k2j -i .\test\data.properties
 ```
 
 Options
@@ -20,11 +20,11 @@ Options
 ```
 More examples
 ```
-ptoj -i .\test\data.properties -s "{'k':'a','v':'b','c':'c'"
+k2j -i .\test\data.properties -s "{'k':'a','v':'b','c':'c'"
 
-ptoj -i .\test\data.properties -s "{'k':'a','v':'b'}"
+k2j -i .\test\data.properties -s "{'k':'a','v':'b'}"
 
-ptoj -i .\test\data.properties
+k2j -i .\test\data.properties
 
-ptoj -i .\test\data.properties -o prop.json -s "{'k':'a','v':'b'}"
+k2j -i .\test\data.properties -o prop.json -s "{'k':'a','v':'b'}"
 ```
