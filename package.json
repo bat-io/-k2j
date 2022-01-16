@@ -1,7 +1,7 @@
 {
   "name": "k2j",
   "version": "0.0.1",
-  "description": "Convert plain properties key=value file to JSON.",
+  "description": "Convert plain properties key-value file to JSON.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha"
@@ -18,7 +18,15 @@
     "convert",
     "k2j"
   ],
-  "author": "sharmag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bat-io/k2j.git"
+  },
+  "author": "bat-io Author",
+  "homepage": "https://github.com/bat-io/k2j",
+  "bugs": {
+    "url": "https://github.com/bat-io/k2j/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.0",
